@@ -9,8 +9,11 @@ In this section, I’ll use Python and SQLAlchemy to do a basic climate analysis
 To do so, I'll complete the following steps:
 
 1: I'll use  (climate_starter.ipynb and hawaii.sqlite) files to complete my climate analysis and data exploration.
+
 2: I'll use the SQLAlchemy create_engine() function to connect to my SQLite database.
+
 3: I'll use the SQLAlchemy automap_base() function to reflect my tables into classes, and then save references to the classes named station and measurement.
+
 4: Link Python to the database by creating a SQLAlchemy session.
 
 **Note**
@@ -21,10 +24,15 @@ To do so, I'll complete the following steps:
  ####  Precipitation Analysis
 
  1: I'll find the most recent date in the dataset.
+ 
  2: Using that date, get the previous 12 months of precipitation data by querying the previous 12 months of data.
+ 
  3: Select only the "date" and "prcp" values.
+ 
  4: Load the query results into a Pandas DataFrame. Explicitly set the column names.
+ 
  5: Sort the DataFrame values by "date".
+ 
  6: Plot the results by using the DataFrame plot method, as the following image shows:
 
  ![](SurfsUp/Images/PrecipitationData.png)
@@ -34,12 +42,17 @@ To do so, I'll complete the following steps:
  #### Station Analysis
 
  1: Design a query to calculate the total number of stations in the dataset.
+ 
  2: Design a query to find the most-active stations (that is, the stations that have the most rows). 
+ 
  To do so, I'll complete the following steps:
     - List the stations and observation counts in descending order.
     - I'll answer the following question: which station id has the greatest number of observations?
+    
  3: Design a query that calculates the lowest, highest, and average temperatures that filter on the most-active station id found in the previous query.
+ 
  4: Design a query to get the previous 12 months of temperature observation (TOBS) data. 
+ 
  To do so, I'll complete the following steps:
      - Filter by the station that has the greatest number of observations.
      - Query the previous 12 months of TOBS data for that station.
