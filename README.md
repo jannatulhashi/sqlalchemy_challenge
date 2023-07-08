@@ -54,10 +54,9 @@ To do so, I'll complete the following steps:
  4: Design a query to get the previous 12 months of temperature observation (TOBS) data. 
  
  To do so, I'll complete the following steps:
- 
-     - Filter by the station that has the greatest number of observations.
-     - Query the previous 12 months of TOBS data for that station.
-     - Plot the results as a histogram with bins=12, as the following image shows:
+   - Filter by the station that has the greatest number of observations.
+   - Query the previous 12 months of TOBS data for that station.
+   - Plot the results as a histogram with bins=12, as the following image shows:
      
 
 ![](SurfsUp/Images/TemperatureDistribution.png)
