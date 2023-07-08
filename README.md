@@ -46,8 +46,8 @@ To do so, I'll complete the following steps:
  2: Design a query to find the most-active stations (that is, the stations that have the most rows). 
  
  To do so, I'll complete the following steps:
+ 
     - List the stations and observation counts in descending order.
-    
     - I'll answer the following question: which station id has the greatest number of observations?
     
  3: Design a query that calculates the lowest, highest, and average temperatures that filter on the most-active station id found in the previous query.
@@ -56,9 +56,7 @@ To do so, I'll complete the following steps:
  
  To do so, I'll complete the following steps:
      - Filter by the station that has the greatest number of observations.
-     
      - Query the previous 12 months of TOBS data for that station.
-     
      - Plot the results as a histogram with bins=12, as the following image shows:
 
 ![](SurfsUp/Images/TemperatureDistribution.png)
@@ -71,12 +69,10 @@ To do so, I'll use Flask to create my routes as follows:
 
 1: /
   - Start at the homepage.
-  - 
   - List all the available routes.
     
 2: /api/v1.0/precipitation
   - Convert the query results from my precipitation analysis (i.e. retrieve only the last 12 months of data) to a dictionary using date as the key and prcp as the value.
-    
   - Return the JSON representation of your dictionary.
 
 3: /api/v1.0/stations
@@ -84,19 +80,15 @@ To do so, I'll use Flask to create my routes as follows:
 
 4: /api/v1.0/tobs
   - Query the dates and temperature observations of the most-active station for the previous year of data.
-    
   - Return a JSON list of temperature observations for the previous year.
 
 5: /api/v1.0/<start> and /api/v1.0/<start>/<end>
   - Return a JSON list of the minimum temperature, the average temperature, and the maximum temperature for a specified start or start-end range.
-    
   - For a specified start, calculate TMIN, TAVG, and TMAX for all the dates greater than or equal to the start date.
-    
   - For a specified start date and end date, calculate TMIN, TAVG, and TMAX for the dates from the start date to the end date, inclusive.
 
 **Hints**
 - Join the station and measurement tables for some of the queries.
-  
 - Use the Flask jsonify function to convert my API data to a valid JSON response object.
 
 **References**
