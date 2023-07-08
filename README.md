@@ -46,9 +46,8 @@ To do so, I'll complete the following steps:
  2: Design a query to find the most-active stations (that is, the stations that have the most rows). 
  
  To do so, I'll complete the following steps:
- 
-    - List the stations and observation counts in descending order.
-    - I'll answer the following question: which station id has the greatest number of observations?
+  - List the stations and observation counts in descending order.
+  - I'll answer the following question: which station id has the greatest number of observations?
     
  3: Design a query that calculates the lowest, highest, and average temperatures that filter on the most-active station id found in the previous query.
  
