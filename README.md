@@ -52,6 +52,7 @@ To do so, I'll complete the following steps:
 ### Part 2: Design Climate App
 Now that I’ve completed my initial analysis, I’ll design a Flask API based on the queries that I just developed. 
 To do so, I'll use Flask to create my routes as follows:
+
 1: /
   - Start at the homepage.
   - List all the available routes.
